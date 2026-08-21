@@ -1,0 +1,6 @@
+{
+  "name": "VendraX - AI-Powered Vendor Intelligence",
+  "description": "AI-native procurement intelligence platform for RFQ generation, automated quotation extraction, true landing cost modeling, multi-factor risk analysis, and explainable vendor selection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

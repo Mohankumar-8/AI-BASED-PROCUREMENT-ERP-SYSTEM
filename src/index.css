@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #F7F4EE;
+    --surface: #FCFAF5;
+    --surface-elevated: #FFFFFF;
+    --surface-muted: #F0EAE0;
+    --foreground: #202522;
+    --foreground-muted: #5D756D;
+    
+    --primary: #315C4A;
+    --primary-hover: #264A3B;
+    --primary-light: #EEF5F1;
+    
+    --secondary: #7A9B87;
+    --secondary-light: #F0F5F2;
+    
+    --border: #E8DFD0;
+    --border-light: #F0EAE0;
+    
+    --accent: #B08A4A;
+    --accent-light: #FAF4E8;
+    
+    --success: #4F7A5A;
+    --success-light: #EEF5F1;
+    
+    --warning: #B08A4A;
+    --warning-light: #FAF4E8;
+    
+    --danger: #B6534A;
+    --danger-light: #FBF0EE;
+    
+    --info: #5D756D;
+    --info-light: #F0F4F2;
+    
+    --sidebar: #202522;
+    --sidebar-surface: #272D29;
+    --sidebar-text: #F7F4EE;
+    --sidebar-muted: #BFC8C1;
+    --sidebar-border: rgba(49, 92, 74, 0.3);
+  }
+
+  .dark {
+    --background: #171A18;
+    --surface: #202522;
+    --surface-elevated: #272D29;
+    --surface-muted: #1D221F;
+    --foreground: #F3F0E8;
+    --foreground-muted: #BFC7C0;
+    
+    --primary: #6F9A82;
+    --primary-hover: #5D866F;
+    --primary-light: #27352D;
+    
+    --secondary: #91AD9C;
+    --secondary-light: #222D26;
+    
+    --border: #343B36;
+    --border-light: #2A302B;
+    
+    --accent: #C5A35C;
+    --accent-light: #2F291D;
+    
+    --success: #79A47F;
+    --success-light: #243326;
+    
+    --warning: #C5A35C;
+    --warning-light: #2F291D;
+    
+    --danger: #C87562;
+    --danger-light: #332320;
+    
+    --info: #91AD9C;
+    --info-light: #222D26;
+    
+    --sidebar: #131614;
+    --sidebar-surface: #1A1E1B;
+    --sidebar-text: #F3F0E8;
+    --sidebar-muted: #9EAAA1;
+    --sidebar-border: #2A302B;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+
+/* Mobile Touch Targets */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Fluid Heading Utilities */
+.fluid-h1 {
+  font-size: clamp(1.25rem, 4vw, 1.75rem);
+}
+
+.fluid-h2 {
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+}
+
+/* Theme utility classes */
+.bg-app-bg { background-color: var(--background); }
+.bg-app-surface { background-color: var(--surface); }
+.bg-app-surface-elevated { background-color: var(--surface-elevated); }
+.bg-app-surface-muted { background-color: var(--surface-muted); }
+.text-app-fg { color: var(--foreground); }
+.text-app-muted { color: var(--foreground-muted); }
+.border-app-border { border-color: var(--border); }
+.border-app-light { border-color: var(--border-light); }
+.text-app-primary { color: var(--primary); }
+.bg-app-primary { background-color: var(--primary); }
+.bg-app-primary-light { background-color: var(--primary-light); }
+.bg-app-accent-light { background-color: var(--accent-light); }
+.text-app-accent { color: var(--accent); }
+.bg-app-success-light { background-color: var(--success-light); }
+.text-app-success { color: var(--success); }
+.bg-app-danger-light { background-color: var(--danger-light); }
+.text-app-danger { color: var(--danger); }
+.bg-app-warning-light { background-color: var(--warning-light); }
+.text-app-warning { color: var(--warning); }
+
